@@ -38,8 +38,8 @@
       ? 'Workshop Call for Papers | 2026 International Conference on AI for Engineering'
       : 'Workshop 论文征集 | 2026 国际工程智能大会';
     document.querySelector('meta[name="description"]').content = lang === 'en'
-      ? '2026 International Conference on AI for Engineering, part of the World Laureates Forum, coordinated by the World Laureates Foundation. Workshop papers due 10 October; notifications 15 October; poster presentation and awards 29 October.'
-      : '2026国际工程智能大会为世界顶尖科学家论坛组成部分，由上海世界顶尖科学家发展基金会统筹举办。Workshop论文10月10日截稿，10月15日通知入选，10月29日Poster展示与颁奖。';
+      ? '2026 International Conference on AI for Engineering, part of the World Laureates Forum, coordinated by the World Laureates Foundation. Workshop papers due 15 October; notifications 20 October; poster exhibition 30–31 October; awards and main forum 31 October.'
+      : '2026国际工程智能大会为世界顶尖科学家论坛组成部分，由上海世界顶尖科学家发展基金会统筹举办。Workshop论文10月15日截稿，10月20日通知入选，10月30—31日Poster展示，10月31日颁奖及主论坛。';
     document.querySelector('.desktop-nav').setAttribute('aria-label', lang === 'en' ? 'Primary navigation' : '主要导航');
     controls.forEach(control => control.setAttribute('aria-pressed', String(control.dataset.lang === lang)));
     updateLinks(lang);
