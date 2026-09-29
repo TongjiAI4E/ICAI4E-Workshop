@@ -66,3 +66,17 @@ body { font-stretch: normal; }
   .date-item > time { font-size: 30px; }
   .date-range { font-size: 24px; }
 }
+
+/* Highlight both submission policies in the site's warm gold palette. */
+.requirement-row.policy-row dd {
+  color: #80551d;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.85;
+}
+.requirement-row.policy-row strong { color: inherit; font-weight: inherit; }
+@media (max-width: 700px) {
+  .submission-panel .requirement-row.policy-row { grid-template-columns: 1fr; gap: 6px; }
+  .requirement-row.policy-row dd { font-size: 15px; }
+}
