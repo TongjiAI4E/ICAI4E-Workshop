@@ -7,8 +7,8 @@
   const config = window.POSTER_CONFIG || {};
   const enabledLabels = {
     submission: ['进入投稿系统', 'Submit your work'],
-    posterTemplate: ['下载 Poster 模板', 'Download poster template'],
-    paperTemplate: ['下载论文模板', 'Download paper template']
+    posterTemplate: ['下载海报模板', 'Download poster template'],
+    paperTemplate: ['参考论文模板（可自定义格式）', 'Reference paper template (custom formats welcome)']
   };
   function safeLink(value, key) {
     if (typeof value !== 'string' || !value.trim()) return '';
@@ -35,11 +35,11 @@
     translations.forEach(item => { item.element.textContent = item[lang]; });
     document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
     document.title = lang === 'en'
-      ? 'Workshop Call for Papers | 2026 International Conference on AI for Engineering'
-      : 'Workshop 论文征集 | 2026 国际工程智能大会';
+      ? 'Workshop Call for Posters | 2026 International Conference on AI for Engineering'
+      : 'Workshop 海报征集 | 2026 国际工程智能大会';
     document.querySelector('meta[name="description"]').content = lang === 'en'
-      ? '2026 International Conference on AI for Engineering, part of the World Laureates Forum, coordinated by the World Laureates Foundation. Workshop papers due 15 October; notifications 20 October; poster exhibition 30–31 October; awards and main forum 31 October.'
-      : '2026国际工程智能大会为世界顶尖科学家论坛组成部分，由上海世界顶尖科学家发展基金会统筹举办。Workshop论文10月15日截稿，10月20日通知入选，10月30—31日Poster展示，10月31日颁奖及主论坛。';
+      ? '2026 International Conference on AI for Engineering, part of the World Laureates Forum, coordinated by the World Laureates Foundation. Workshop posters due 15 October; accepted posters announced 20 October; poster exhibition 30–31 October; awards and main forum 31 October.'
+      : '2026国际工程智能大会为世界顶尖科学家论坛组成部分，由上海世界顶尖科学家发展基金会统筹举办。Workshop海报10月15日截稿，10月20日通知入选海报，10月30—31日海报展示，10月31日颁奖及主论坛。';
     document.querySelector('.desktop-nav').setAttribute('aria-label', lang === 'en' ? 'Primary navigation' : '主要导航');
     controls.forEach(control => control.setAttribute('aria-pressed', String(control.dataset.lang === lang)));
     updateLinks(lang);
