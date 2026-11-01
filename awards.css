@@ -10,7 +10,7 @@
 .banner-award-counts strong { display: block; color: var(--gold-light); font-size: 38px; line-height: 1.2; font-weight: 600; }
 .banner-award-counts span { display: block; margin-top: 8px; font-size: 12px; color: #dce2ea; }
 .banner-gallery { min-width: 0; }
-.banner-frame { overflow: hidden; border: 3px solid var(--gold-light); outline: 1px solid #936522; outline-offset: 3px; background: #00122c; box-shadow: 0 12px 36px #00122c66; touch-action: pan-y; }
+.banner-frame { overflow: hidden; border: 2px solid rgb(237 191 127 / 60%); border-radius: 22px; background: #00122c; background-clip: padding-box; box-shadow: 0 12px 36px #00122c66; touch-action: pan-y; }
 .banner-slides { display: flex; transition: transform .65s ease; }
 .banner-slide { flex: 0 0 100%; min-width: 0; position: relative; }
 .banner-slide img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; }

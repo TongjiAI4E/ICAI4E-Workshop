@@ -20,7 +20,7 @@ html[lang=en] .forum-heading p:last-child{font-size:17px;letter-spacing:.025em;f
 /* A prominent results destination shared by the home and poster pages. */
 .header-inner { gap: 20px; }
 .desktop-nav, html[lang=en] .desktop-nav { gap: 16px; }
-.nav-awards-button { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 10px 15px; border: 2px solid var(--gold); background: var(--navy); color: var(--gold-light); font-size: 15px; font-weight: 800; line-height: 1.4; white-space: nowrap; }
+.nav-awards-button { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 10px 20px; border: 2px solid var(--gold); border-radius: 999px; background: var(--navy); color: var(--gold-light); font-size: 15px; font-weight: 800; line-height: 1.4; white-space: nowrap; }
 .nav-awards-button:hover, .nav-awards-button[aria-current=page] { background: var(--gold-light); color: var(--navy); border-color: var(--gold); }
 @media (max-width: 1200px) {
   html { scroll-padding-top: 150px; }
