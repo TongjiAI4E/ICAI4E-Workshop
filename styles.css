@@ -17,6 +17,26 @@ html[lang=en] .forum-heading p:last-child{font-size:17px;letter-spacing:.025em;f
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
 @media print{.site-header{position:static}.desktop-nav,.language-switch,.hero-actions,.back-top{display:none}.container{width:100%}.hero{print-color-adjust:exact;-webkit-print-color-adjust:exact}.hero-content{padding:20px}.hero h1,html[lang=en] .hero h1{font-size:36px}.foundation-logo{width:300px}.hero-logo-link{width:240px}.section,.awards-section,.background-section,.organizers-section{padding-block:25px}.awards-section{background:var(--paper);color:var(--ink)}.awards-section h2,.awards-section h3,.selection-stages p:last-child,.award-card p{color:var(--ink)}.award-card{background:none;border-color:var(--line)}.section-heading,.program-day,.award-card,.submission-panel{break-inside:avoid}.hero-bottom .container{padding-inline:20px}}
 /* Latest announcements, newest first. */
+/* A prominent results destination shared by the home and poster pages. */
+.header-inner { gap: 20px; }
+.desktop-nav, html[lang=en] .desktop-nav { gap: 16px; }
+.nav-awards-button { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 10px 15px; border: 2px solid var(--gold); background: var(--navy); color: var(--gold-light); font-size: 15px; font-weight: 800; line-height: 1.4; white-space: nowrap; }
+.nav-awards-button:hover, .nav-awards-button[aria-current=page] { background: var(--gold-light); color: var(--navy); border-color: var(--gold); }
+@media (max-width: 1200px) {
+  html { scroll-padding-top: 150px; }
+  .header-inner { display: grid; grid-template-columns: minmax(0,1fr) auto auto; gap: 10px 20px; padding-block: 12px; }
+  .desktop-nav, html[lang=en] .desktop-nav { display: flex; grid-column: 1 / -1; grid-row: 2; justify-content: center; margin: 0; gap: 10px 22px; }
+  .nav-awards-button { grid-column: 2; grid-row: 1; }
+  .language-switch { grid-column: 3; grid-row: 1; margin: 0; }
+}
+@media (max-width: 700px) {
+  html { scroll-padding-top: 185px; }
+  .header-inner { grid-template-columns: minmax(0,1fr) auto; gap: 10px; }
+  .language-switch { grid-column: 2; }
+  .nav-awards-button { grid-column: 1 / -1; grid-row: 2; min-height: 40px; padding: 8px 12px; font-size: 14px; }
+  .desktop-nav, html[lang=en] .desktop-nav { grid-row: 3; justify-content: flex-start; gap: 18px; max-width: 100%; overflow-x: auto; padding: 2px 0 6px; font-size: 12px; scrollbar-width: thin; }
+}
+@media print { .nav-awards-button { display: none; } }
 .news-section { padding-block: 32px; background: #eee6d6; border-bottom: 1px solid var(--line); }
 .news-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 30px; align-items: start; }
 .news-layout h2 { font-size: 27px; line-height: 1.4; padding-top: 4px; }

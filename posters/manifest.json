@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "award": "best",
+    "title": "Learning Minimal Sufficient Visual Intervention for Instruction-Based Image Editing",
+    "pdf": "poster_1.pdf"
+  },
+  {
+    "id": 6,
+    "award": "best",
+    "title": "Omni-Perception Policy Optimization for Multimodal Emotion Reasoning",
+    "pdf": "poster_6.pdf"
+  },
+  {
+    "id": 2,
+    "award": "candidate",
+    "title": "CoT Vectors: Transferring and Probing the Reasoning Mechanisms of LLMs",
+    "pdf": "poster_2.pdf"
+  },
+  {
+    "id": 11,
+    "award": "candidate",
+    "title": "LIBERO-Industry: Benchmarking Robotic Manipulation under Industrial Process Constraints",
+    "pdf": "poster_11.pdf"
+  },
+  {
+    "id": 16,
+    "award": "candidate",
+    "title": "VGGT-Motion: Motion-Aware Calibration-Free Monocular SLAM for Long-Range Consistency",
+    "pdf": "poster_16.pdf"
+  },
+  {
+    "id": 8,
+    "award": "candidate",
+    "title": "T2I-CoReBench: Composition and Reasoning Evaluation for Text-to-Image Generation",
+    "pdf": "poster_8.pdf"
+  },
+  {
+    "id": 9,
+    "award": "candidate",
+    "title": "KUPAS MASTER: Engineering Traceable Expert Experience for Language Model Agents",
+    "pdf": "poster_9.pdf"
+  },
+  {
+    "id": 12,
+    "award": "candidate",
+    "title": "Unveiling Effective In-Context Configurations for Image Captioning: An External & Internal Analysis",
+    "pdf": "poster_12.pdf"
+  },
+  {
+    "id": 20,
+    "award": "candidate",
+    "title": "RAC-WAM: Region-wise Adversarial Consistency for Visual Robustness in World-Action Models",
+    "pdf": "poster_20.pdf"
+  },
+  {
+    "id": 5,
+    "award": "outstanding",
+    "title": "IVAC-P²L: Leveraging Irregular Repetition Priors for Improving Video Action Counting",
+    "pdf": "poster_5.pdf"
+  },
+  {
+    "id": 15,
+    "award": "outstanding",
+    "title": "LED-BENCH: A Benchmark for Large-format Engineering Drawing Understanding",
+    "pdf": "poster_15.pdf"
+  },
+  {
+    "id": 4,
+    "award": "outstanding",
+    "title": "Semi-supervised Nighttime Pedestrian Tracking via Dual Teachers and VLM-guided Semantic Enhancement",
+    "pdf": "poster_4.pdf"
+  },
+  {
+    "id": 7,
+    "award": "outstanding",
+    "title": "Anomaly Detection and Generation with Diffusion Models: A Survey",
+    "pdf": "poster_7.pdf"
+  },
+  {
+    "id": 10,
+    "award": "outstanding",
+    "title": "Execution Feedback and Review in LLM-Assisted Engineering Design: A Controlled Study of Power and Water Networks",
+    "pdf": "poster_10.pdf"
+  },
+  {
+    "id": 3,
+    "award": "outstanding",
+    "title": "PACE-Bench: Measuring and Steering Persona Adherence and Task Correctness in LLM Agents",
+    "pdf": "poster_3.pdf"
+  },
+  {
+    "id": 13,
+    "award": "outstanding",
+    "title": "UniCustom: Unified Visual Conditioning for Multi-Reference Image Generation",
+    "pdf": "poster_13.pdf"
+  },
+  {
+    "id": 19,
+    "award": "outstanding",
+    "title": "Connectome Topology Under Embodied Perturbations",
+    "pdf": "poster_19.pdf"
+  },
+  {
+    "id": 17,
+    "award": "outstanding",
+    "title": "From Infusion to Assimilation Distillation for Medical Image Segmentation",
+    "pdf": "poster_17.pdf"
+  },
+  {
+    "id": 18,
+    "award": "outstanding",
+    "title": "Traffic Accident Liability Determination Using Large Language Models",
+    "pdf": "poster_18.pdf"
+  },
+  {
+    "id": 14,
+    "award": "outstanding",
+    "title": "Embodied Intelligent Vehicle-Arm Cooperative Inspection Robot for Complex Environments",
+    "pdf": "poster_14.pdf"
+  }
+]
