@@ -20,6 +20,15 @@
   function updateLinks(lang) {
     document.querySelectorAll('[data-link]').forEach(link => {
       const key = link.dataset.link;
+      if (key === 'submission' && config.submissionClosed === true) {
+        link.removeAttribute('href');
+        link.removeAttribute('target');
+        link.setAttribute('aria-disabled', 'true');
+        link.setAttribute('tabindex', '-1');
+        link.classList.add('placeholder-link');
+        link.querySelector('[data-en]').textContent = lang === 'en' ? 'Submissions closed' : '投稿已截止';
+        return;
+      }
       const destination = safeLink(config[key], key);
       if (!destination) return;
       link.href = destination;
@@ -35,11 +44,11 @@
     translations.forEach(item => { item.element.textContent = item[lang]; });
     document.documentElement.lang = lang === 'en' ? 'en' : 'zh-CN';
     document.title = lang === 'en'
-      ? 'Workshop Call for Posters | 2026 International Conference on AI for Engineering'
-      : 'Workshop 海报征集 | 2026 国际工程智能大会';
+      ? 'Workshop Papers & Posters | 2026 International Conference on AI for Engineering'
+      : 'Workshop 论文海报 | 2026 国际工程智能大会';
     document.querySelector('meta[name="description"]').content = lang === 'en'
-      ? '2026 International Conference on AI for Engineering, part of the World Laureates Forum, coordinated by the World Laureates Foundation. Workshop posters due 15 October; accepted posters announced 20 October; poster exhibition 30–31 October; awards and main forum 31 October.'
-      : '2026国际工程智能大会为世界顶尖科学家论坛组成部分，由上海世界顶尖科学家发展基金会统筹举办。Workshop海报10月15日截稿，10月20日通知入选海报，10月30—31日海报展示，10月31日颁奖及主论坛。';
+      ? '2026 International Conference on AI for Engineering. Workshop submissions are closed: 57 submissions, 20 accepted, 2 Best Paper Awards, 7 Best Paper Candidate Awards and 11 Outstanding Paper Awards. Main forum: 31 October, 14:00–18:20 Beijing Time (UTC+8).'
+      : '2026国际工程智能大会Workshop投稿已截止：共57篇投稿、20篇入选，评出2篇最佳论文、7篇最佳论文候选及11篇杰出论文。10月31日主论坛14:00–18:20，海报颁奖18:05–18:15（北京时间）。';
     document.querySelector('.desktop-nav').setAttribute('aria-label', lang === 'en' ? 'Primary navigation' : '主要导航');
     controls.forEach(control => control.setAttribute('aria-pressed', String(control.dataset.lang === lang)));
     updateLinks(lang);
